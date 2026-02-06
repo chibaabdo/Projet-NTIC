@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Ntic</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="À propos.css">
+</head>
+<body>
+
+<header>
+        
+        <div class="logo"><img src="img/image.png" alt="Ntic-logo">   NTIC Rabat</div>
+
+    <ul class="links">  
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="À propos.html">À propos</a></li>
+        <li><a href="Formations.html">Formations</a></li>
+        <li><a href="Admission.html">Admission</a></li>
+        <li><a href="Espace Étudiant.html">Espace Étudiant</a></li>
+        <li><a href="Actualités.html">Actualités</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+    </ul>
+</header>
+
+
+
+<main class="about">
+
+<section class="intro">
+    <h1>NTIC</h1>
+    <p class="abrev">Nouvelles Technologies de l’Information et de la Communication</p>
+</section>
+
+<section class="card">
+    <h2>Présentation générale</h2>
+    <p>
+        NTIC Rabat forme des jeunes aux métiers du numérique, de l’informatique et de la gestion,
+        avec une approche pratique, moderne et innovante.
+    </p>
+</section>
+
+<section class="card mission">
+    <h2>Mission</h2>
+    <div class="mission-grid">
+        <div class="mission-item">Former des techniciens compétents</div>
+        <div class="mission-item">Maîtriser les outils numériques modernes</div>
+        <div class="mission-item">Favoriser l’insertion professionnelle</div>
+        <div class="mission-item">Encourager l’entrepreneuriat</div>
+    </div>
+</section>
+
+<section class="card">
+    <h2>Vision</h2>
+    <p>Devenir un centre de référence au Maroc dans la formation digitale.</p>
+</section>
+
+<section class="card valeurs">
+    <h2>Valeurs</h2>
+    <div class="valeurs-grid">
+        <div class="valeur-item"><span>Discipline</span><p>Respect des règles et des délais</p></div>
+        <div class="valeur-item"><span>Excellence</span><p>Qualité et rigueur dans chaque formation</p></div>
+        <div class="valeur-item"><span>Innovation</span><p>Utilisation des nouvelles technologies</p></div>
+        <div class="valeur-item"><span>Respect</span><p>Relations humaines et bienveillance</p></div>
+        <div class="valeur-item"><span>Engagement</span><p>Suivi personnalisé des stagiaires</p></div>
+    </div>
+</section>
+
+<section class="card points-forts">
+    <h2>Nos points forts</h2>
+    <div class="points-grid">
+        <div class="point-item">Diplômes reconnus</div>
+        <div class="point-item">Formateurs qualifiés</div>
+        <div class="point-item">Stages garantis</div>
+        <div class="point-item">Projets réels</div>
+        <div class="point-item">Formation 100% pratique</div>
+    </div>
+</section>
+
+<a href="Accueil.html" class="btn-retour">← Retour à l’accueil</a>
+
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const cards = document.querySelectorAll(".card, .intro");
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting){
+                entry.target.classList.add("show");
+            }
+        });
+    }, { threshold: 0.2 });
+    cards.forEach(card => observer.observe(card));
+
+    btn.addEventListener("mouseleave", () => {
+        btn.style.boxShadow = "0 10px 40px rgba(0,,0,0.3)";
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+    <div class="footer-contenu">
+
+        <div class="dans-footer">
+            <h3>NTIC Rabat</h3>
+            <p>Institut National des Technologies de l’Information et de la Communication</p>
+            <p>📍 Adresse : Rue Assendiane (زنقة السنديان), Hay Riad, Rabat.</p>
+        </div>
+
+        <div class="dans-footer">
+            <h3>Contact</h3>
+            <p>📞 Téléphone : +212 537 71 71 80</p>
+            <p>✉ Email : contact@ofppt.ma</p>
+        </div>
+
+        <div class="dans-footer">
+                <h3>Réseaux sociaux</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/Ntic.Rabat/?locale=ar_AR">Facebook</a>
+                    <a href="https://www.instagram.com/p/DEFkUKJNpbo/">Instagram</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="sous-footer">
+            © 2026 NTIC Rabat — Tous droits réservés
+        </div>
+    </footer>
+
+
+
+    </body>
+    </html>

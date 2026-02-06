@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Ntic</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Accueil.css">
+</head>
+<body>
+
+<header>
+        
+        <div class="logo"><img src="img/image.png" alt="Ntic-logo">   NTIC Rabat</div>
+
+    <ul class="links">  
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="À propos.html">À propos</a></li>
+        <li><a href="Formations.html">Formations</a></li>
+        <li><a href="Admission.html">Admission</a></li>
+        <li><a href="Espace Étudiant.html">Espace Étudiant</a></li>
+        <li><a href="Actualités.html">Actualités</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+    </ul>
+    <script>
+    const links = document.querySelector('.links');
+    const firstLink = links.querySelector('li:first-child a');
+
+    firstLink.addEventListener('click', function(e) {
+        e.preventDefault(); // empêcher le lien de naviguer
+        links.classList.toggle('show'); // afficher/cacher les autres liens
+    });
+</script>
+</header>
+
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Construisez votre avenir dans le monde du numérique</h1>
+        <p>
+            NTIC Rabat est un centre de formation professionnelle spécialisé
+            dans les métiers du digital, de l’informatique et des nouvelles technologies.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="Formations.html" class="btn btn-primary">Découvrir nos formations</a>
+            <a href="Admission.html" class="btn btn-secondary">S’inscrire maintenant</a>
+        </div>
+    </div>
+</section>
+
+
+<section class="about">
+    <div class="about-container">
+
+        <div class="about-text">
+            <h2>Qui sommes-nous ?</h2>
+            <p>
+                NTIC Rabat est un établissement de formation professionnelle qui accompagne
+                les jeunes vers une carrière réussie dans les domaines de l’informatique,
+                du digital et de la gestion.
+            </p>
+            <p>
+                Nous offrons des formations pratiques adaptées au marché de l’emploi,
+                avec un encadrement pédagogique de qualité.
+            </p>
+        </div>
+
+        <div class="about-image">
+            <img src="img/img condidat.jpg" alt="Étudiants NTIC Rabat">
+        </div>
+
+    </div>
+</section>
+
+
+<section class="formations">
+    <h2>Nos formations les plus demandées</h2>
+
+    <div class="formations-choix">
+
+        <div class="formation-card">
+            <h3>Développement Informatique</h3>
+            <p>Création de sites web et applications</p>
+        </div>
+
+        <div class="formation-card">
+            <h3>Réseaux & Systèmes</h3>
+            <p>Installation et sécurité des réseaux</p>
+        </div>
+
+        <div class="formation-card">
+            <h3>Infographie & Design</h3>
+            <p>Design graphique et montage</p>
+        </div>
+
+        <div class="formation-card">
+            <h3>Marketing Digital</h3>
+            <p>Publicité, réseaux sociaux</p>
+        </div>
+
+        <div class="formation-card">
+            <h3>Bureautique</h3>
+            <p>Word, Excel, PowerPoint</p>
+        </div>
+
+    </div>
+
+    <div class="formations-btn">
+        <a href="Formations.html" class="btn btn-primary">Voir toutes les formations</a>
+    </div>
+</section>
+
+
+<section class="commentaire">
+    <h2>Ce que disent nos étudiants</h2>
+
+    <div class="commentaire-contenu">
+
+        <div class="commentaire-card">
+            <p>“Grâce à NTIC Rabat, j’ai trouvé un stage rapidement après ma formation.”</p>
+            <h4>– Ahmed</h4>
+        </div>
+
+        <div class="commentaire-card">
+            <p>“Les professeurs sont très compétents et toujours disponibles.”</p>
+            <h4>– Salma</h4>
+        </div>
+
+        <div class="commentaire-card">
+            <p>“La formation en développement web m’a beaucoup aidé à trouver un emploi.”</p>
+            <h4>– Youssef</h4>
+        </div>
+
+        <div class="commentaire-card">
+            <p>“Très bonne ambiance, on apprend beaucoup de choses pratiques.”</p>
+            <h4>– Amina</h4>
+        </div>
+
+        <div class="commentaire-card">
+            <p>“Je recommande NTIC Rabat à tous les étudiants qui veulent réussir.”</p>
+            <h4>– Hamza</h4>
+        </div>
+
+        <div class="commentaire-card">
+            <p>“Les formations sont bien organisées et adaptées au marché du travail.”</p>
+            <h4>– Sara</h4>
+        </div>
+
+    </div>
+</section>
+
+
+
+<section class="cta">
+    <h2>Prêt à commencer votre carrière ?</h2>
+    <p>Rejoignez NTIC Rabat dès aujourd’hui !</p>
+    <a href="#" class="btn btn-primary">Demande d’inscription</a>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+    <div class="footer-contenu">
+
+        <div class="dans-footer">
+            <h3>NTIC Rabat</h3>
+            <p>Institut National des Technologies de l’Information et de la Communication</p>
+            <p>📍 Adresse : Rue Assendiane (زنقة السنديان), Hay Riad, Rabat.</p>
+        </div>
+
+        <div class="dans-footer">
+            <h3>Contact</h3>
+            <p>📞 Téléphone : +212 537 71 71 80</p>
+            <p>✉ Email : contact@ofppt.ma</p>
+        </div>
+
+        <div class="dans-footer">
+                <h3>Réseaux sociaux</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/Ntic.Rabat/?locale=ar_AR">Facebook</a>
+                    <a href="https://www.instagram.com/p/DEFkUKJNpbo/">Instagram</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="sous-footer">
+            © 2026 NTIC Rabat — Tous droits réservés
+        </div>
+    </footer>
+
+
+
+    </body>
+    </html>

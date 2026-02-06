@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Ntic</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Espace Étudiant.css">
+</head>
+<body>
+
+<header>
+        
+        <div class="logo"><img src="img/image.png" alt="Ntic-logo">   NTIC Rabat</div>
+
+    <ul class="links">  
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="À propos.html">À propos</a></li>
+        <li><a href="Formations.html">Formations</a></li>
+        <li><a href="Admission.html">Admission</a></li>
+        <li><a href="Espace Étudiant.html">Espace Étudiant</a></li>
+        <li><a href="Actualités.html">Actualités</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+    </ul>
+</header>
+
+
+ 
+<div class="login" id="login">
+    <h2>Connexion Étudiant</h2>
+    <input type="text" id="user" placeholder="Identifiant">
+    <input type="password" id="pass" placeholder="Mot de passe">
+    <button onclick="login()">Se connecter</button>
+</div>
+
+<main class="dsb" id="dsb">
+    <nav>
+        <button onclick="showSection('profil')">Profil</button>
+        <button onclick="showSection('emploi')">Emploi du temps</button>
+        <button onclick="showSection('notes')">Notes</button>
+        <button onclick="showSection('docs')">Documents</button>
+        <button onclick="logout()">Déconnexion</button>
+    </nav>
+
+    <section id="profil" class="content active">
+        <h2>Profil Étudiant</h2>
+        <p>Nom : Étudiant NTIC</p>
+        <p>Formation : Développement Informatique</p>
+        <p>Année : 2025 / 2026</p>
+    </section>
+
+    <section id="emploi" class="content">
+        <h2>Emploi du temps</h2>
+        <ul>
+            <li>Lundi : Développement Web</li>
+            <li>Mardi : Réseaux</li>
+            <li>Mercredi : Design</li>
+        </ul>
+    </section>
+
+    <section id="notes" class="content">
+        <h2>Notes</h2>
+        <p>HTML / CSS : 15</p>
+        <p>JavaScript : 14</p>
+        <p>Réseaux : 13</p>
+    </section>
+
+    <section id="docs" class="content">
+        <h2>Documents</h2>
+        <ul>
+            <li>Cours HTML</li>
+            <li>Cours CSS</li>
+            <li>Cours JavaScript</li>
+        </ul>
+    </section>
+</main>
+
+
+<script>
+function login(){
+    document.getElementById("login").style.display="none"
+    document.getElementById("dsb").style.display="block"
+}
+function logout(){
+    document.getElementById("dsb").style.display="none"
+    document.getElementById("login").style.display="flex"
+}
+function showSection(id){
+    document.querySelectorAll(".content").forEach(s=>s.classList.remove("active"))
+    document.getElementById(id).classList.add("active")
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+    <div class="footer-contenu">
+
+        <div class="dans-footer">
+            <h3>NTIC Rabat</h3>
+            <p>Institut National des Technologies de l’Information et de la Communication</p>
+            <p>📍 Adresse : Rue Assendiane (زنقة السنديان), Hay Riad, Rabat.</p>
+        </div>
+
+        <div class="dans-footer">
+            <h3>Contact</h3>
+            <p>📞 Téléphone : +212 537 71 71 80</p>
+            <p>✉ Email : contact@ofppt.ma</p>
+        </div>
+
+        <div class="dans-footer">
+                <h3>Réseaux sociaux</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/Ntic.Rabat/?locale=ar_AR">Facebook</a>
+                    <a href="https://www.instagram.com/p/DEFkUKJNpbo/">Instagram</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="sous-footer">
+            © 2026 NTIC Rabat — Tous droits réservés
+        </div>
+    </footer>
+
+
+
+    </body>
+    </html>

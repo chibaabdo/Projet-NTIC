@@ -1,0 +1,124 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f5f7fb;
+    color: #002147;
+    margin: 0;
+    padding: 0;
+}
+
+.about {
+    max-width: 1000px;
+    margin: auto;
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.intro{
+    padding-bottom: 60px;
+    
+}
+.intro h1{
+    font-size: 90px;
+    color: blue;
+    font-family: 'Times New Roman', Times, serif;
+}
+.intro p{
+    font-size: 30px;
+    color: red;
+    font-family: fantasy;
+}
+
+.card {
+    background: white;
+    border-radius: 20px;
+    padding: 40px 30px;
+    margin-bottom: 40px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    opacity: 0;
+    transform: translateY(40px);
+}
+
+.card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.card h2 {
+    color: #002147;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.card p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333;
+}
+
+.mission-grid, .valeurs-grid, .points-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.mission-item, .valeur-item, .point-item {
+    background: #e1e8f0;
+    padding: 20px 25px;
+    border-radius: 15px;
+    min-width: 180px;
+    transition: transform 0.3s, background 0.3s;
+    font-weight: bold;
+}
+
+.mission-item:hover, .valeur-item:hover, .point-item:hover {
+    transform: translateY(-5px);
+    background: #002147;
+    color: white;
+}
+
+.valeur-item span {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.valeur-item p {
+    font-size: 14px;
+}
+
+.btn-retour {
+    display: inline-block;
+    margin: 50px auto 0;
+    padding: 14px 40px;
+    background: #ffb703;
+    color: #002147;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-retour:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0,33,71,0.7);
+}
+
+@media (max-width: 1024px) {
+    .about {
+        padding: 60px 5%;
+    }
+    .card h2 {
+        font-size: 28px;
+    }
+    .mission-item, .valeur-item, .point-item {
+        min-width: 150px;
+    }
+}
